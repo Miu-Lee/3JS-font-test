@@ -41,8 +41,6 @@ const material = new THREE.MeshMatcapMaterial({matcap: matcapTexture})
 
 //camera
 const camera = new THREE.PerspectiveCamera(75, sizes.width/sizes.height, 0.1, 100)
-camera.position.x = 1
-camera.position.y = 1
 camera.position.z = 2
 scene.add(camera)
 
@@ -69,10 +67,10 @@ for (let i=0; i<300; i++){
 
 //font
 const fontLoader = new FontLoader()
-    fontLoader.load('/fonts/ZCOOL XiaoWei_Regular.json',
+    fontLoader.load('fonts/helvetiker_regular.typeface.json',
     function (font) {
         const textGeometry = new TextGeometry(
-            '好虫一条长',
+            'Hello Puppy',
             {
                 font: font,
                 size: 0.5,

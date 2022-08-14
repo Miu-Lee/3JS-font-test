@@ -9,7 +9,7 @@ import typefaceFont from 'three/examples/fonts/helvetiker_regular.typeface.json'
 
 
 //debug
-const gui = new GUI()
+//const gui = new GUI()
 
 //canvas
 const canvas = document.querySelector('canvas.webgl')
